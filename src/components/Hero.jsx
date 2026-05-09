@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ShieldCheck, Clock, Users, Award } from 'lucide-react';
+import heroBg from '../assets/hero-bg.png';
 
 const Hero = () => {
   const stats = [
@@ -15,7 +16,10 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 -left-64 w-[500px] h-[500px] bg-neon/10 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-1/4 -right-64 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px]"></div>
-        <div className="absolute inset-0 bg-[url('/hero-bg.png')] bg-cover bg-center opacity-40 mix-blend-lighten"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-lighten"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-[#050816]/60 via-[#050816]/80 to-[#050816]"></div>
       </div>
 

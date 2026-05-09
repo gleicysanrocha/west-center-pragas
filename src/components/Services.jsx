@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { Bug, Rat, Droplets, ArrowDownToLine, Droplet, Sprout } from 'lucide-react';
+import residencialImg from '../assets/residencial.png';
+import corporativoImg from '../assets/corporativo.png';
 
 const Services = () => {
   const services = [
@@ -70,7 +72,7 @@ const Services = () => {
             className="group relative rounded-3xl overflow-hidden glass border border-white/10 box-glow-hover transition-all"
           >
             <div className="aspect-[4/3] w-full overflow-hidden">
-              <img src="/residencial.png" alt="Proteção Residencial" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 mix-blend-lighten" />
+              <img src={residencialImg} alt="Proteção Residencial" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 mix-blend-lighten" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/60 to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-8 w-full">
@@ -87,7 +89,7 @@ const Services = () => {
             className="group relative rounded-3xl overflow-hidden glass border border-white/10 box-glow-hover transition-all"
           >
             <div className="aspect-[4/3] w-full overflow-hidden">
-              <img src="/corporativo.png" alt="Proteção Corporativa" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 mix-blend-lighten" />
+              <img src={corporativoImg} alt="Proteção Corporativa" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 mix-blend-lighten" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/60 to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-8 w-full">

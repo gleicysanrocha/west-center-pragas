@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
+import sobreBg from '../assets/sobre-bg.png';
 
 const About = () => {
   const cards = ["Segurança", "Qualidade", "Atendimento", "Garantia"];
@@ -41,7 +42,7 @@ const About = () => {
               className="relative h-[400px] rounded-2xl overflow-hidden"
             >
               <img 
-                src="/sobre-bg.png" 
+                src={sobreBg}
                 alt="Profissional com EPI" 
                 className="w-full h-full object-cover opacity-80 mix-blend-lighten"
               />

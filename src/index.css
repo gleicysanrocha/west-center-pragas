@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #050816;
+  --color-neon: #36D399;
+  
+  --font-sans: 'Outfit', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-dark text-white font-sans overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(54, 211, 153, 0.5), 0 0 20px rgba(54, 211, 153, 0.3);
+  }
+  
+  .box-glow {
+    box-shadow: 0 0 15px rgba(54, 211, 153, 0.2), 0 0 30px rgba(54, 211, 153, 0.1);
+  }
+  
+  .box-glow-hover:hover {
+    box-shadow: 0 0 20px rgba(54, 211, 153, 0.4), 0 0 40px rgba(54, 211, 153, 0.2);
+  }
+  
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+}

@@ -41,11 +41,11 @@ const About = () => {
               className="relative h-[400px] rounded-2xl overflow-hidden"
             >
               <img 
-                src="https://images.unsplash.com/photo-1584820927506-69d67562095f?q=80&w=2070&auto=format&fit=crop" 
+                src="/sobre-bg.png" 
                 alt="Profissional com EPI" 
-                className="w-full h-full object-cover opacity-80"
+                className="w-full h-full object-cover opacity-80 mix-blend-lighten"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/40 to-transparent"></div>
               
               {/* Floating Badge */}
               <div className="absolute bottom-6 left-6 right-6 glass p-6 rounded-xl border border-white/10 flex items-center justify-between">

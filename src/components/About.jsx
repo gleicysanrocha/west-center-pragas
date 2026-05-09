@@ -48,17 +48,6 @@ const About = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/40 to-transparent"></div>
               
-              {/* Floating Badge */}
-              <div className="absolute bottom-6 left-6 right-6 glass p-6 rounded-xl border border-white/10 flex items-center justify-between">
-                <div>
-                  <div className="text-neon font-bold text-3xl mb-1">10+</div>
-                  <div className="text-gray-300 text-sm">Anos de Experiência</div>
-                </div>
-                <div className="text-right">
-                  <div className="text-white font-bold text-3xl mb-1">100%</div>
-                  <div className="text-gray-300 text-sm">Clientes Satisfeitos</div>
-                </div>
-              </div>
             </motion.div>
           </div>
         </div>
